@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left:8% ;
+    padding-right: 8%;
+   background-image: url(img/main.jpg);
+   transition: 0.9s;
+}
+.container-active1{
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/deve.jpg);
+}
+.container-active2{
+    background-image: url(img/msr.jpg);
+}
+
+.navbar{
+    height: 23%;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    width: 30px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-left: -40px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 60px;
+    padding-left: 20pc;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.row{
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-size:100px
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding:12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top:30px;
+}
+.col2{
+    margin-left: 12em;
+    display: inline-flex;
+
+}
+.card{
+    width: 200px;
+    height: 230px; 
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+    background-image: url(img/pyramid.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s;
+}
+.card1{
+    background-image: url(img/deve.jpg);
+}
+.card2{
+    background-image: url(img/msr.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
