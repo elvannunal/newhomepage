@@ -32,6 +32,7 @@
 .logo{
     width: 117px;
     cursor: pointer;
+    opacity: 0.6;
 }
 .menu-icon{
     width: 40px;
