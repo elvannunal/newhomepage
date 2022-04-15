@@ -30,7 +30,7 @@
 
 }
 .logo{
-    width: 30px;
+    width: 117px;
     cursor: pointer;
 }
 .menu-icon{
@@ -63,7 +63,7 @@ h1{
     font-size:100px
 }
 p{
-    color: #fff;
+    color:#fff;
     font-size: 11px;
     line-height: 15px;
 }
@@ -72,11 +72,17 @@ button{
     color: #000;
     font-size: 12px;
     padding:12px 0;
-    background: #fff;
+   opacity: 0.6;
     border: 0;
     border-radius: 20px;
     outline: none;
     margin-top:30px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(180,64,58,1) 0%, rgba(255,237,146,1) 50%, rgba(255,225,183,1) 100%);
+    transition: 0.8s;
+}
+button:hover{
+    opacity: 1;
 }
 .col2{
     margin-left: 12em;
@@ -93,17 +99,47 @@ button{
     margin:10px 15px;
     background-image: url(img/pyramid.jpg);
     background-size: cover;
-    background-position: center;
-    transition: transform 0.6s;
+    background-position: center; 
 }
 .card1{
     background-image: url(img/deve.jpg);
+    transition: 0.6s;
+    animation: animate1 5s infinite ;
 }
 .card2{
     background-image: url(img/msr.jpg);
+    transition: 0.6s;
+    animation: animate2 6s infinite ;
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    width: 211px;
+    height: 268px;
+    font-size: 20px;
 }
 
+@keyframes animate1 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+   100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes animate2 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
